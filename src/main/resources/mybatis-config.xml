@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+ <configuration>
+<!-- 	<typeAliases>
+ 		&lt;!&ndash; Start 지훈 &ndash;&gt;
+ 		<typeAlias alias="MemberDTO" type="com.sevenelite.billbo.member.model.dto.MemDTO"/>
+ 		<typeAlias alias="MemBbDTO" type="com.sevenelite.billbo.member.model.dto.MemBbDTO"/>
+ 		<typeAlias alias="MemDTO" type="com.sevenelite.billbo.member.model.dto.MemDTO"/>
+ 		<typeAlias alias="FormVacationDTO" type="com.sevenelite.billbo.approval.model.dto.FormVacationDTO"/>
+ 		<typeAlias alias="ApproDraftingDTO" type="com.sevenelite.billbo.approval.model.dto.ApproDraftingDTO"/>
+ 		<typeAlias alias="ApproLineMemDTO" type="com.sevenelite.billbo.approval.model.dto.ApproLineMemDTO"/>
+ 		<typeAlias alias="CheckApproveDTO" type="com.sevenelite.billbo.approval.model.dto.CheckApproveDTO"/>
+ 		<typeAlias alias="ListWaitingApprovalDTO" type="com.sevenelite.billbo.approval.model.dto.ListWaitingApprovalDTO"/>
+ 		<typeAlias alias="RoleDTO" type="com.sevenelite.billbo.member.model.dto.RoleDTO"/>
+ 		&lt;!&ndash; End 지훈 &ndash;&gt;
+ 		
+ 		
+ 		<typeAlias alias="WorkDTO" type="com.sevenelite.billbo.workhour.work.model.dto.WorkDTO"/> 
+ 		<typeAlias alias="WorkTypeDTO" type="com.sevenelite.billbo.workhour.work.model.dto.WorkTypeDTO"/> 
+ 		<typeAlias alias="WorkDeptAndMemberDTO" type="com.sevenelite.billbo.workhour.work.model.dto.WorkDeptAndMemberDTO"/>
+ 		<typeAlias alias="StatusAndWorkDTO" type="com.sevenelite.billbo.workhour.work.model.dto.StatusAndWorkDTO"/>
+ 		<typeAlias alias="RecordWorkDTO" type="com.sevenelite.billbo.workhour.work.model.dto.RecordWorkDTO"/> 
+ 		<typeAlias alias="ArmyDTO" type="com.sevenelite.billbo.profile.model.dto.ArmyDTO"/>
+ 		<typeAlias alias="MemberInfoDTO" type="com.sevenelite.billbo.profile.model.dto.MemberInfoDTO"/>
+ 		<typeAlias alias="SpotDTO" type="com.sevenelite.billbo.profile.model.dto.SpotDTO"/>
+ 		<typeAlias alias="DeptDTO" type="com.sevenelite.billbo.profile.model.dto.DeptDTO"/>
+ 		<typeAlias alias="ModifyDeptDTO1" type="com.sevenelite.billbo.profile.model.dto.ModifyDeptDTO1"/>
+ 		<typeAlias alias="ModifySpotDTO" type="com.sevenelite.billbo.profile.model.dto.ModifySpotDTO"/>
+ 		<typeAlias alias="CareerDTO" type="com.sevenelite.billbo.profile.model.dto.CareerDTO"/>
+ 		<typeAlias alias="BonusDTO" type="com.sevenelite.billbo.profile.model.dto.BonusDTO"/>
+ 		<typeAlias alias="CertificateDTO" type="com.sevenelite.billbo.profile.model.dto.CertificateDTO"/>
+ 		<typeAlias alias="FinalAcademicDTO" type="com.sevenelite.billbo.profile.model.dto.FinalAcademicDTO"/>
+ 		<typeAlias alias="FamilyDTO" type="com.sevenelite.billbo.profile.model.dto.FamilyDTO"/>
+ 		<typeAlias alias="FileAttachmentDTO" type="com.sevenelite.billbo.profile.model.dto.FileAttachmentDTO"/>
+ 		<typeAlias alias="LicenseDTO" type="com.sevenelite.billbo.profile.model.dto.LicenseDTO"/>
+		<typeAlias alias="StatusAndWorkDTO" type="com.sevenelite.billbo.workhour.work.model.dto.StatusAndWorkDTO"/>
+ 		<typeAlias alias="RnpDTO" type="com.sevenelite.billbo.rnp.model.dto.RnpDTO"/>
+ 		<typeAlias alias="ModifyDeptDTO" type="com.sevenelite.billbo.rnp.model.dto.ModifyDeptDTO"/>
+ 		<typeAlias alias="BoardDTO" type="com.sevenelite.billbo.board.model.dto.BoardDTO"/>
+ 		<typeAlias alias="ModifyDeptAndMemAndRnpDTO" type="com.sevenelite.billbo.rnp.model.dto.ModifyDeptAndMemAndRnpDTO"/>
+ 		<typeAlias alias="CalDTO" type="com.sevenelite.billbo.calendar.model.dto.CalDTO"/>
+ 		<typeAlias alias="PerformanceListDTO" type="com.sevenelite.billbo.performance.model.dto.PerformanceListDTO"/>
+ 		<typeAlias alias="DepartmentDTO" type="com.sevenelite.billbo.department.model.dto.DepartmentDTO"/>
+ 		<typeAlias alias="DepartmentSpotDTO" type="com.sevenelite.billbo.department.model.dto.DepartmentSpotDTO"/>
+ 		<typeAlias alias="ReviewListDTO" type="com.sevenelite.billbo.performance.model.dto.ReviewListDTO"/>
+ 		
+ 		
+ 		<typeAlias alias="MemberAndMemberInfoAndDeptAndModifyDeptDTO" type="com.sevenelite.billbo.allmember.model.dto.MemberAndMemberInfoAndDeptAndModifyDeptDTO"/>
+		<typeAlias alias="MemberAndArmyDTO" type="com.sevenelite.billbo.allmember.model.dto.MemberAndArmyDTO"/>
+ 		<typeAlias alias="MemberAndFamilyDTO" type="com.sevenelite.billbo.allmember.model.dto.MemberAndFamilyDTO"/>
+ 		<typeAlias alias="CertificateListDTO" type="com.sevenelite.billbo.allmember.model.dto.CertificateListDTO"/>
+ 		<typeAlias alias="MemberAndFinalDTO" type="com.sevenelite.billbo.allmember.model.dto.MemberAndFinalDTO"/>
+ 		<typeAlias alias="MemberAndCareerDTO" type="com.sevenelite.billbo.allmember.model.dto.MemberAndCareerDTO"/>
+ 		<typeAlias alias="HolidayDTO" type="com.sevenelite.billbo.holiday.model.dto.HolidayDTO"/>
+ 		<typeAlias alias="MemberInfoAndFileDTO" type="com.sevenelite.billbo.allmember.model.dto.MemberInfoAndFileDTO"/>
+ 		<typeAlias alias="MemberHolidayDTO" type="com.sevenelite.billbo.holiday.model.dto.MemberHolidayDTO"/>
+ 	</typeAliases>-->
+ 	
+ 	<!-- 
+ 	<settings>
+    	<setting name="callSettersOnNulls" value="true"/>
+ 	</settings> 
+ 	-->
+ </configuration>
