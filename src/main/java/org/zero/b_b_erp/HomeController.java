@@ -9,7 +9,7 @@ public class HomeController {
 
     @GetMapping("/")
     public String home(Model model) {
-        model.addAttribute("title", "B.B ERP");
-        return "index";
+        return "index"; // layout.html이 전체 틀
     }
 }
+
