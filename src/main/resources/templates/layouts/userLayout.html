@@ -1,4 +1,4 @@
-<!-- layout.html -->
+<!-- adminLayout.html -->
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org"
       xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
@@ -10,11 +10,27 @@
 </head>
 <body>
 <div id="main-wrapper">
-    <!-- header -->
-    <th:block th:replace="~{fragments/header :: header}"></th:block>
 
-    <!-- sidebar -->
+    <!-- Loader -->
+    <div id="loader-wrapper">
+        <div id="loader">
+            <div class="loader-ellips">
+                <span class="loader-ellips__dot"></span>
+                <span class="loader-ellips__dot"></span>
+                <span class="loader-ellips__dot"></span>
+                <span class="loader-ellips__dot"></span>
+            </div>
+        </div>
+    </div>
+    <!-- /Loader -->
+
+    <!-- Header -->
+    <th:block th:replace="~{fragments/header :: header}"></th:block>
+    <!-- /Header -->
+
+    <!-- Sidebar -->
     <th:block th:replace="~{fragments/sidebar :: sidebar}"></th:block>
+    <!-- /Sidebar -->
 
     <!-- content area -->
     <main>
